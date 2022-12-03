@@ -178,6 +178,12 @@ header nav ul li {
 
 /*specialities style*/
 
+.speciality-item:last-child .speciality-img {
+    order: 1;
+}
+.speciality-item:last-child .speciality-info {
+    order: 2;
+}
 
 
 @media screen and (min-width:725px) {
@@ -244,10 +250,4 @@ header nav ul li {
         margin-bottom: 1rem;
     }
 
-    .speciality-item:last-child .speciality-img {
-        order: 1;
-    }
-    .speciality-item:last-child .speciality-info {
-        order: 2;
-    }
 }
