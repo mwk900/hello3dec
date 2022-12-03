@@ -249,5 +249,11 @@ header nav ul li {
     .price span {
         margin-bottom: 1rem;
     }
+    .speciality-item:last-child .speciality-img {
+        order: 1;
+    }
+    .speciality-item:last-child .speciality-info {
+        order: 2;
+    }
 
 }
