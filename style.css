@@ -13,7 +13,7 @@ body {
 main, header {
     padding: 1rem;
 }
-
+/*default all imgs to 100%*/
 img {
     width: 100%;
 }
@@ -36,14 +36,45 @@ header nav ul li {
     font-size: 1.6rem;
 }
 
+/*hero style start*/
 
+.hero-info h1 {
+    font-weight: lighter;
+    font-size: 3em;
+    color: rgb(50, 50, 50);
+    margin: 3rem 0;
+}
 
-GITHUB 
+.vegana {
+    color: #2a9d8f;
+}
 
+#hero-buttons {
+    display: flex;
+    justify-content: space-around;
+}
 
+#hero-buttons :first-child {
+    background-color: #e76f51;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 5px 5px 15px #e76f51;
+    border-radius: 5px;
+    border: none;
+    margin-right: 15%;
+}
 
+#hero-buttons :last-child {
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+}
 
+.hero-info img {
+    margin: 3em 0;
+}
 
+/*hero style end*/
 
 
 
@@ -72,6 +103,24 @@ GITHUB
 
     #burger-menu {
         display: none;
+    }
+    .hero {
+        display: flex;
+        padding: 1rem;
+    }
+    .hero-info {
+        padding: 1rem;
+    }
+
+    #hero-image {
+        width: 375px;
+    }
+    .hero-info-block {
+        display: block;
+    }
+
+    #hero-buttons {
+        justify-content: flex-start;
     }
 
 }
