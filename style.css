@@ -291,7 +291,7 @@ h3 {
     text-align: center;
   }
   .expert-info p {
-    color: var(--col-neutral-grey-800);
+    color: #333333;
     font-weight: lighter;
     margin: 1rem 0;
   }
@@ -301,19 +301,143 @@ h3 {
     justify-content: space-evenly;
     width: 50%;
     margin: 0 auto;
-    color: var(--col-blue-600);
+    color: #0a66c2;
   }
   
   .expert-social :last-child {
     color: #55ACEE;
   }
 
+/*reservation section*/
+
+.reservation {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.reservation-img {
+    height: 80vh;
+}
+
+.reservation-form-section {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(0,0,0,0.7);
+    width: 40%;
+    height: 90%;
+}
+.reservation-form-section h2 {
+    color: white;
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+}
+input[type=text],
+input[type=email],
+input[type=number],
+
+textarea {
+    padding: 10px;
+    margin-bottom: 1.6rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/*reservation section end*/
+
+/*footer start*/
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .footer-info-p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-brand {
+    font-family: 'Rancho', sans-serif;
+    font-size: 4rem;
+    display: block;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 1rem auto;
+    font-size: 2.5rem;
+  }
+  
+  .footer-title {
+    color: orange;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    border-bottom: 1px solid white;
+    width: 25%;
+  }
+  
+  .footer-times {
+    list-style-type: none;
+  }
+  
+  .footer-times li {
+    padding-bottom: 1rem;
+  }
+  
+  .footer-map {
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .drection {
+    margin-bottom: 1rem;
+  }
+  
+  .copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+/*footer end*/
+
+
+
 
 
 
 
 /*specialities style*/
-
+@media screen and (max-width: 724px) {
+    .reservation {
+      min-height: 650px;
+    }
+  
+    textarea {
+      height: 3rem;
+    }
+  }
 
 
 
@@ -414,6 +538,32 @@ h3 {
         height: 350px;
   }
 
+  /* reservation form */
+  .reservation-form-section {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 40%;
+    height: 90%;
+  }
 
+  /* changing textarea height */
+  textarea {
+    height: 7rem;
+  }
+
+  /* footer */
+  .footer-container {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem;
+  }
+
+  .footer-1, .footer-2, .footer-3 {
+    flex: 1 1 350px;
+  }
 
 }
