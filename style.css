@@ -226,10 +226,48 @@ header nav ul li {
     color: #333333
 }
 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 
 /*menu style end*/
 
+
+/*testimony styling*/
+
+.testimony-hero {
+    position: relative
+}
+
+.testimony-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    color: white;
+    font-size: 1.4rem;
+    width: 80%;
+    height: 80%;
+    font-weight: lighter;
+}
+
+.testimony-quote {
+    font-size: 6rem;
+}
+
+
+/*testimony styling end*/
 
 
 
