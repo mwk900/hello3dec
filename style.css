@@ -168,6 +168,70 @@ header nav ul li {
 }
 
 
+/*menu style start*/
+
+
+
+.menu-title {
+    font-size: 2.5rem;
+    font-weight: lighter;
+
+}
+
+.menu-item {
+    display: flex;
+    margin: 2rem 0;
+    position: relative;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    border-bottom: 1px dashed black;
+}
+
+
+.menu-title:last-child::after {
+    border: none;
+}
+
+/* coffee picture*/
+
+#coffee {
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.menu-item section h3 {
+    margin-bottom: 1rem;
+    color: #783f04
+
+}
+
+.menu-item section h3 span {
+    margin-left: 3rem;
+    font-weight: bold;
+    color: #783f04
+}
+
+.menu-item p {
+    color: #333333
+}
+
+
+
+/*menu style end*/
+
+
+
 
 
 
@@ -244,11 +308,27 @@ header nav ul li {
     .price span {
         margin-bottom: 1rem;
     }
-    .speciality-item:first-child .speciality-img {
+    .speciality-item:last-child .speciality-img {
         order: 1;
     }
     .speciality-item:last-child .speciality-info {
         order: 2;
     }
+
+    .menu-container {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .menu-title {
+        text-align: center;
+    }
+
+    .menu-items::after {
+        width: 75%;
+    }
+
+
+
 
 }
